@@ -1,20 +1,15 @@
-# 🌀 FYPP - Traductor Fortran a Python
-
-[![License](https://img.shields.io/badge/license-Educational-blue.svg)](LICENSE)
-[![Language](https://img.shields.io/badge/language-C%2FFlex%2FBison-orange.svg)]()
-[![Fortran](https://img.shields.io/badge/input-Fortran%2090-purple.svg)]()
-[![Python](https://img.shields.io/badge/output-Python%203-green.svg)]()
+# FYPP - Traductor Fortran a Python
 
 **FYPP** (Fortran to pYthon Parser) es un traductor automático que convierte código Fortran 90 a Python 3, facilitando la modernización de código científico legado. Desarrollado con **Flex**, **Bison/Yacc** y **C** para máximo rendimiento y precisión.
 
-## ✨ Características
+## Características
 
-- 🔄 **Traducción automática** de Fortran 90 a Python 3
-- 📊 **Cobertura del 60%** de sintaxis Fortran común
-- 🚀 **Alto rendimiento** con analizadores compilados
-- 🛠️ **Facilidad de uso** con scripts de automatización
-- 🔍 **Diagnóstico detallado** de errores con línea y columna
-- 📦 **Conversión en lote** de múltiples archivos
+- **Traducción automática** de Fortran 90 a Python 3
+- **Cobertura del 60%** de sintaxis Fortran común
+- **Alto rendimiento** con analizadores compilados
+- **Facilidad de uso** con scripts de automatización
+- **Diagnóstico detallado** de errores con línea y columna
+- **Conversión en lote** de múltiples archivos
 
 ## 📁 Estructura del Proyecto
 
@@ -36,7 +31,7 @@ fypp/
 └── README.md
 ```
 
-## 🔧 Instalación
+## Instalación
 
 ### Requisitos del Sistema
 
@@ -63,7 +58,7 @@ sudo dnf install flex bison gcc make
 brew install flex bison gcc
 ```
 
-## 🏗️ Compilación
+## Compilación
 
 ### Método Rápido (Recomendado)
 ```bash
@@ -86,7 +81,7 @@ gcc -o fypp parser.tab.c lex.yy.c src/main.c src/functions.c -lm
 rm -f parser.tab.c parser.tab.h lex.yy.c
 ```
 
-## 🚀 Uso
+## Uso
 
 ### Conversión Individual
 ```bash
@@ -115,27 +110,27 @@ Opciones:
   --version        Mostrar versión del traductor
 ```
 
-## 📊 Características Soportadas
+## Características Soportadas
 
-### ✅ Totalmente Soportado
+### Totalmente Soportado
 - **Variables**: `integer`, `real`, `logical`, `character`
 - **Estructuras de control**: `if/then/else`, `do while`, `do...end do`
 - **Operadores**: aritméticos, relacionales, lógicos
 - **E/O básica**: `read`, `print`, `write`
 - **Funciones matemáticas**: `exp`, `sin`, `cos`, `sqrt`
 
-### 🔶 Parcialmente Soportado
+### Parcialmente Soportado
 - **Arrays**: declaración y acceso básico
 - **Subrutinas**: conversión a funciones Python
 - **Módulos**: conversión simplificada
 
-### ❌ No Soportado (Aún)
+### No Soportado (Aún)
 - **Tipos derivados**
 - **Interfaz de procedimientos**
 - **Paralelización (OpenMP)**
 - **E/O avanzada de archivos**
 
-## 📝 Ejemplo de Traducción
+## Ejemplo de Traducción
 
 ### Código Fortran Original
 ```fortran
@@ -188,7 +183,7 @@ if __name__ == "__main__":
     main()
 ```
 
-## 🐛 Solución de Problemas
+## Solución de Problemas
 
 ### Error: "No se genera archivo .py"
 ```bash
@@ -212,7 +207,7 @@ Error de sintaxis en línea 15, columna 8: token inesperado 'entonces'
 Sugerencia: use 'then' en lugar de 'entonces'
 ```
 
-## 🧪 Testing
+## Testing
 
 ### Ejecutar Tests
 ```bash
@@ -228,62 +223,16 @@ Sugerencia: use 'then' en lugar de 'entonces'
 2. Crear archivo `.py` esperado en `tests/expected/`
 3. Ejecutar `./scripts/run_tests.sh --update`
 
-## 🤝 Contribución
 
-¡Las contribuciones son bienvenidas! Por favor:
+## Créditos
 
-1. **Fork** el repositorio
-2. Crea una **rama** para tu feature (`git checkout -b feature/nueva-caracteristica`)
-3. **Commit** tus cambios (`git commit -am 'Agregar nueva característica'`)
-4. **Push** a la rama (`git push origin feature/nueva-caracteristica`)
-5. Crea un **Pull Request**
-
-### Guías de Contribución
-- Seguir el estilo de código existente
-- Agregar tests para nuevas características
-- Actualizar documentación según sea necesario
-- Usar commits descriptivos
-
-## 📚 Documentación Adicional
-
-- [Manual de Usuario](docs/manual.md)
-- [Guía de Desarrollo](docs/development.md)
-- [Referencia de API](docs/api.md)
-- [Casos de Uso](docs/use-cases.md)
-
-## 🏆 Créditos
-
-Desarrollado por [Tu Nombre] como parte de [Proyecto/Institución].
+Desarrollado por Hector Pedro Ñaupa Valeriano como parte de ForPy, un traductor semiautomático de Fortran a Python basado en Bison y Flex.
 
 Agradecimientos especiales a:
 - Comunidad de Flex/Bison
 - Proyectos de referencia en traducción de lenguajes
 - Usuarios beta que proporcionaron retroalimentación
 
-## 📄 Licencia
+##  Licencia
 
-Este proyecto está licenciado bajo la **Licencia Educativa** - ver el archivo [LICENSE](LICENSE) para más detalles.
-
-```
-Copyright (c) 2024 [Tu Nombre]
-
-Este software puede ser usado con fines educativos y de investigación.
-Para uso comercial, contactar al autor para obtener permisos.
-```
-
-## 🔗 Enlaces Útiles
-
-- [Documentación de Flex](https://github.com/westes/flex)
-- [Manual de Bison](https://www.gnu.org/software/bison/manual/)
-- [Referencia Fortran 90](https://www.fortran90.org/)
-- [Guía de Migración Python](https://docs.python.org/3/howto/porting.html)
-
----
-
-<div align="center">
-
-**⭐ Si este proyecto te resulta útil, considera darle una estrella ⭐**
-
-[Reportar Bug](https://github.com/tu-usuario/fypp/issues) · [Solicitar Feature](https://github.com/tu-usuario/fypp/issues) · [Discusiones](https://github.com/tu-usuario/fypp/discussions)
-
-</div>
+Este proyecto está licenciado bajo la **Licencia Educativa** - ver el archivo [LICENSE] para más detalles.
