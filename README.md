@@ -1,11 +1,11 @@
-# FYPP - Traductor Fortran a Python
+# ForPy - Traductor Fortran a Python
 
-**FYPP** (Fortran to pYthon Parser) es un traductor automático que convierte código Fortran 90 a Python 3, facilitando la modernización de código científico legado. Desarrollado con **Flex**, **Bison/Yacc** y **C** para máximo rendimiento y precisión.
+**ForPy**  es un traductor automático que convierte código Fortran 90 a Python 3, facilitando la modernización de código científico legado. Desarrollado con **Flex**, **Bison/Yacc** y **C** para máximo rendimiento y precisión.
 
 ## Características
 
 - **Traducción automática** de Fortran 90 a Python 3
-- **Cobertura del 60%** de sintaxis Fortran común
+- **Cobertura del 68%** de sintaxis Fortran común
 - **Alto rendimiento** con analizadores compilados
 - **Facilidad de uso** con scripts de automatización
 - **Diagnóstico detallado** de errores con línea y columna
