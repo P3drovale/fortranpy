@@ -29,5 +29,5 @@ Basado en FYPP - Copyright (c) 2024 Hector Pedro Ñaupa Valeriano
   title={ForPy: Traductor Fortran a Python},
   author={Hector Pedro Ñaupa Valeriano},
   year={2025},
-  url={[URL del repositorio]}
+  url={https://github.com/P3drovale/fortranpy}
 }
